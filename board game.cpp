@@ -11,12 +11,12 @@ int main(int argc, char **argv){
 	getmaxyx(stdscr, yMax, xMax);
 	
 	WINDOW *win = newwin(yMax/2, xMax/2, yMax/4, xMax/4);
-	box(win, 0, 0);
+	box(board_win, 0, 0);
 	
-	mvwprintw(win, 0, 20, " Snake Game by kel. ");
+	mvwprintw(board_win, 0, 20, " Snake Game by kel. ");
 	
 	char ch;
-	while (ch=wgetch(win)){
+	while (ch=wgetch(board_win)){
 	}
 	
 	endwin();
